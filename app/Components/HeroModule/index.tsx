@@ -18,7 +18,7 @@ return(
             <h1 className="text-green-950 font-bold text-2xl lg:text-5xl">
                 {header}
             </h1>
-            <p>{body}</p>
+            <p className="text-green-950 py-4">{body}</p>
             {button &&(
                 <a href={button.href} target="_blank">
                   <button className="rounded-full bg-yellow-600 text-white py-5 px-16 transition-shadow hover:shadow-lg">
@@ -28,8 +28,8 @@ return(
             )}
             </div>
             {image && <img src={image} alt="" className="w-screen md:w-1/2 h-auto"/>}
-        
+    
     </div>
-)
-}
+);
+};
 export default HeroModule;
